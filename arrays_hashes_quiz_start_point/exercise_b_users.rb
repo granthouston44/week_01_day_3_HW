@@ -58,13 +58,42 @@ users = {
 users["Jonathan"][:twitter]
 
 # 2. Get Erik's hometown
-p users["Erik"][:home_town]
+users["Erik"][:home_town]
 
 # 3. Get the array of Erik's lottery numbers
+users["Erik"][:lottery_numbers]
+
 # 4. Get the type of Avril's pet Monty
+users["Avril"][:pets][0][:species]
+
 # 5. Get the smallest of Erik's lottery numbers
+users["Erik"][:lottery_numbers].sort.first
+
 # 6. Return an array of Avril's lottery numbers that are even
+counter = 0
+while counter < users["Avril"][:lottery_numbers].length
+  if users["Avril"][:lottery_numbers][counter] % 2 == 0 #divides the lottery number entry by 2, and returns the remainder.
+     users["Avril"][:lottery_numbers][counter] #if the remainder is == 0 then it is printed
+  end
+  counter += 1 #allows counter to increase by 1 each iteration, moving the index along the array
+end
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+users["Erik"][:lottery_numbers].push(7)
+
 # 8. Change Erik's hometown to Edinburgh
+users["Erik"][:home_town] = "Edinburgh"
+
 # 9. Add a pet dog to Erik called "Fluffy"
+users["Erik"][:pets] << {name: "Fluffy", species: "Dog"}
+
 # 10. Add another person to the users hash
+users["Grant"] = {
+  home_town: "Rutherglen",
+  pets: [
+    {
+      name: "Alfie",
+      species: "Budgie"
+    }
+  ]
+}
