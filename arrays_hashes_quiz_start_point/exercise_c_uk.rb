@@ -25,7 +25,21 @@ united_kingdom[3] = {
   population: 1811000 ,
   capital: "Belfast"
 }
-p united_kingdom[3]
 
 # 3. Use a loop to print the names of all the countries in the UK.
+counter = 0
+
+while counter < united_kingdom.length
+  #p united_kingdom[counter][:name]
+  counter += 1
+end
+
 # 4. Use a loop to find the total population of the UK.
+counter = 0
+total_pop = 0
+
+while counter < united_kingdom.length
+  total_pop = united_kingdom[counter][:population] + total_pop
+  counter += 1
+end
+p total_pop
