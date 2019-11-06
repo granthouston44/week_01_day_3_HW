@@ -30,4 +30,9 @@ stops.fetch(2)
 stops.fetch(-5)
 
 # 9. Reverse the positions of the stops in the array
+stops.reverse
+
 # 10. Print out all the stops using a for loop
+for each_stop in stops
+  p each_stop
+end
