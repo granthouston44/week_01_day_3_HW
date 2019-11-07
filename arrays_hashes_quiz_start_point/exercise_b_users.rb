@@ -129,3 +129,14 @@ users["Grant"] = {
     }
   ]
 }
+
+
+
+# new_person = {
+#   twitter: "amcgilloway",
+#   lottery_numbers: [1, 2, 4, 5, 6, 7],
+#   home_town: "Glasgow",
+#   pets: [{name: "Blue", species: "Cat"}]
+# }
+#
+# users["Ally" = new_person
