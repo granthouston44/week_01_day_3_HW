@@ -104,7 +104,7 @@ end
 #     even_numbers.push(number)
 #   end
 # end
-# 
+#
 # p even_numbers
 
 
@@ -115,6 +115,8 @@ users["Erik"][:lottery_numbers].push(7)
 users["Erik"][:home_town] = "Edinburgh"
 
 # 9. Add a pet dog to Erik called "Fluffy"
+# new_pet = {name: "Fluffy", species: "Dog"}
+# push.(new_pet)
 users["Erik"][:pets] << {name: "Fluffy", species: "Dog"}
 
 # 10. Add another person to the users hash
