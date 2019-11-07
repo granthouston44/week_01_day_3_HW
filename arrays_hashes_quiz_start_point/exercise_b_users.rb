@@ -68,7 +68,23 @@ users["Avril"][:pets][0][:species]
 
 # 5. Get the smallest of Erik's lottery numbers
 users["Erik"][:lottery_numbers].sort.first
+# or .min
+numbers = users["Erik"][:lottery_numbers]
 
+# def smallest_number(number_array)
+#   smallest = 100
+#   for number in number_array
+#   if number < smallest
+#     smallest = number
+#   end
+# end
+# return smallest
+# end
+#
+# p smallest_number(numbers)
+
+
+  # end
 # 6. Return an array of Avril's lottery numbers that are even
 counter = 0
 while counter < users["Avril"][:lottery_numbers].length
@@ -77,6 +93,20 @@ while counter < users["Avril"][:lottery_numbers].length
   end
   counter += 1 #allows counter to increase by 1 each iteration, moving the index along the array
 end
+
+
+# lottery_numbers = users["Avril"][:lottery_numbers]
+#
+# even_numbers = []
+#
+# for number in lottery_numbers
+#   if (number.even?)
+#     even_numbers.push(number)
+#   end
+# end
+# 
+# p even_numbers
+
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 users["Erik"][:lottery_numbers].push(7)
